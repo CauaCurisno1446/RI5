@@ -1,2 +1,5 @@
-# RI5
-Repositório dedicado à entrega da RI5 da matéria de POO
+# Entrega  — *RI 5*
+
+> Professor: *Gerson da Penha* <br>
+> Aluno: *Cauã Cursino* <br>
+> Turma: 3° ADS

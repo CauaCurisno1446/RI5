@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var DescritorEmpresa_1 = require("./DescritorEmpresa");
+var Empresa_1 = require("./Empresa");
+var Endereco_1 = require("./Endereco");
+var Funcionario_1 = require("./Funcionario");
+var Telefone_1 = require("./Telefone");
+var endereco = new Endereco_1.default(123, 'Av. Paulista', 'Jardim Paulista', 'São Paulo');
+var telefone = new Telefone_1.default('011', '9-9999-9999');
+var funcionario = new Funcionario_1.default('Tony Stark', '123456789', '999.999.999-99', endereco, telefone);
+var funcionario2 = new Funcionario_1.default('Steve Rogers', '123456789', '999.999.999-99', endereco, telefone);
+var funcionario3 = new Funcionario_1.default('Peter Parker', '123456789', '999.999.999-99', endereco, telefone);
+var funcionarios = [funcionario, funcionario2, funcionario3];
+var telefones = [telefone];
+var empresa = new Empresa_1.default(funcionarios, endereco, 'ABC LTDA', 'Mercado Online', '999-999-999-999-99');
+var descritor = new DescritorEmpresa_1.default;
+descritor.descrever(empresa);
